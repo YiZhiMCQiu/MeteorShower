@@ -1,6 +1,6 @@
 package cn.yizhimcqiu.client.frame.font;
 
-import cn.yizhimcqiu.client.util.ILogManager;
+import cn.yizhimcqiu.util.ILogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.awt.*;
@@ -9,7 +9,7 @@ import java.util.Objects;
 public class Fonts {
     private static final Logger LOGGER = ILogManager.getLogger();
     private static final Font BASE = createFont("/font/plain_text.ttf");
-    public static final Font PLAIN = createFont("/font/plain_text.ttf").deriveFont(Font.PLAIN, 20);
+    public static final Font PLAIN = BASE.deriveFont(Font.PLAIN, 20);
     public static final Font BOLD = PLAIN.deriveFont(Font.BOLD);
     public static final Font ITALIC = PLAIN.deriveFont(Font.ITALIC);
 

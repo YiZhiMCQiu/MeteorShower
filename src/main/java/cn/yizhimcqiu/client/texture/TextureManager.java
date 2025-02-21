@@ -1,6 +1,6 @@
 package cn.yizhimcqiu.client.texture;
 
-import cn.yizhimcqiu.client.util.ILogManager;
+import cn.yizhimcqiu.util.ILogManager;
 import org.apache.logging.log4j.Logger;
 
 import javax.imageio.ImageIO;
