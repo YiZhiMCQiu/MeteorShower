@@ -1,6 +1,7 @@
 package cn.yizhimcqiu.client;
 
 import cn.yizhimcqiu.client.macosx.MacOSApplication;
+import cn.yizhimcqiu.util.ExceptionHandler;
 import cn.yizhimcqiu.util.ILogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -11,6 +12,6 @@ public class Main {
         if (System.getProperty("os.name").equals("Mac OS X")) {
             MacOSApplication.init();
         }
-        new MeteorShowerClient().start();
+        ExceptionHandler.safe(() -> new MeteorShowerClient().start());
     }
 }

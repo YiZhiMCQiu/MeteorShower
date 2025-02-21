@@ -13,6 +13,6 @@ public class Tiles {
     }
 
     public static void init() {
-        throw new RuntimeException("Game Must Be Crashed!");
+
     }
 }

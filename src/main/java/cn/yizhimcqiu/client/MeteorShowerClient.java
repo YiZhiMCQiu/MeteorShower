@@ -24,8 +24,6 @@ public class MeteorShowerClient {
         this.gameFrame.loadTextures();
         LOGGER.info("Game initialized");
 
-        ExceptionHandler.CRASH_TASKS.add(MeteorShowerClient::new);
-
         GameState.getInstance().setup();
     }
 
